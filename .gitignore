@@ -33,11 +33,12 @@ README (1).md
 _skill_extract/
 .cursor/skills/
 
-# Model artifacts
+# Model artifacts & submission weights — do not commit GGUF files
 outputs/
 checkpoints/
 hf_cache/
 *.gguf
+model/
 *.safetensors
 *.npz
 *.orbax
