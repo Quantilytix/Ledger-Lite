@@ -1,0 +1,35 @@
+{
+  "coa_cap": 40,
+  "splits": {
+    "train": {
+      "n_in": 46437,
+      "n_dups_dropped": 9214,
+      "n_bank_bank_dropped": 3058,
+      "n_out": 34165,
+      "n_tenants": 233,
+      "coa_cap": 40,
+      "coa_size_mean": 22.420020488804333,
+      "drop_bank_bank": true
+    },
+    "val": {
+      "n_in": 10240,
+      "n_dups_dropped": 2489,
+      "n_bank_bank_dropped": 865,
+      "n_out": 6886,
+      "n_tenants": 51,
+      "coa_cap": 40,
+      "coa_size_mean": 16.801771710717397,
+      "drop_bank_bank": true
+    },
+    "test": {
+      "n_in": 13770,
+      "n_dups_dropped": 3752,
+      "n_bank_bank_dropped": 1238,
+      "n_out": 8780,
+      "n_tenants": 65,
+      "coa_cap": 40,
+      "coa_size_mean": 18.123006833712985,
+      "drop_bank_bank": true
+    }
+  }
+}
