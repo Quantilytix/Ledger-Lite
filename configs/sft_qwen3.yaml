@@ -1,0 +1,20 @@
+exp_name: exp-qwen3-coa
+model_id: Qwen/Qwen2.5-3B-Instruct
+model_config: qwen2p5_3b
+max_seq_len: 2048
+batch_size: 4
+num_epochs: 1
+learning_rate: 2.0e-4
+lora_rank: 16
+lora_alpha: 32
+lora_module_path: ".*q_proj|.*k_proj|.*v_proj|.*o_proj|.*gate_proj|.*up_proj|.*down_proj"
+eval_every_n_steps: 200
+max_eval_batches: 16
+mesh_shape: [4, 2]
+mesh_axis_names: [fsdp, tp]
+train_path: data/sft/train.jsonl
+val_path: data/sft/val.jsonl
+output_dir: outputs/exp-qwen3-coa
+seed: 42
+max_new_tokens: 192
+eval_generate_n: 256
