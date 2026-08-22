@@ -1,0 +1,39 @@
+{
+  "team_id": "LedgerLite",
+  "domain": "corporate_enterprise",
+  "language_scope": [
+    "en"
+  ],
+  "african_alpha_claim": false,
+  "budget_laptop_claim": true,
+  "submitter": {
+    "name": "Tinevimbo Musingadi",
+    "email": "tinevimbo@quantilytix.com",
+    "github_handle": "Tinevimbo"
+  },
+  "cross_disciplinary_pairing": {
+    "discipline": "education",
+    "load_bearing": true,
+    "description": "Automated double-entry accounting journal posting from bank statement transaction lines and Chart of Accounts"
+  },
+  "test_prompts": [
+    {
+      "prompt_id": "tp_001",
+      "prompt": "Classify this bank transaction into a double-entry journal.\nDate: 2026-08-15\nAmount: 650.00\nBank direction: DEBIT\nDescription: ENGEN QUICKSHOP FUEL HARARE\nChart of accounts:\n- 1000 | Bank Account | Asset\n- 6100 | Fuel & Travel Expense | Expense\n- 6200 | Office Supplies | Expense\n- 6500 | Utilities | Expense\nReturn JSON only."
+    },
+    {
+      "prompt_id": "tp_002",
+      "prompt": "Classify this bank transaction into a double-entry journal.\nDate: 2026-08-18\nAmount: 12500.00\nBank direction: CREDIT\nDescription: INVOICE 1042 CLIENT PAYMENT CONSULTING\nChart of accounts:\n- 1000 | Bank Account | Asset\n- 4000 | Sales & Consulting Revenue | Revenue\n- 4100 | Interest Income | Revenue\n- 2000 | Accounts Payable | Liability\nReturn JSON only."
+    }
+  ],
+  "model": {
+    "name": "LedgerLite-Qwen2.5-3B-Q4_K_M",
+    "runtime": "llama.cpp",
+    "quantization": "GGUF Q4_K_M",
+    "parameters_estimate": "3B",
+    "packaging": "binary_bundle"
+  },
+  "_runtime": {
+    "model_path": "model/exp-qwen3-coa-q4_k_m.gguf"
+  }
+}
