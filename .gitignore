@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Secrets
+.env
+.env.*
+hf_token.txt
+
+# Raw / prepared financial data — do not push
+data/
+data/raw/*.jsonl
+data/sft/
+data/diagnostics/
+train.jsonl
+val.jsonl
+test.jsonl
+train (2).jsonl
+test (2).jsonl
+"train (2).jsonl"
+"test (2).jsonl"
+stats_summary.json
+"README (1).md"
+README (1).md
+
+# Skills
+_skill_extract/
+.cursor/skills/
+
+# Model artifacts
+outputs/
+checkpoints/
+hf_cache/
+*.gguf
+*.safetensors
+*.npz
+*.orbax
+/tmp/
+
+# Editor
+.DS_Store
+.idea/
